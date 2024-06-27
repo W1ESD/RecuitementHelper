@@ -1,0 +1,23 @@
+export declare const classCapacities: {
+    class2: number;
+    class3: number;
+    class4: number;
+    class5: number;
+    class6: number;
+    class7: number;
+    class8: number;
+    class10: number;
+    class14: number;
+    class15: number;
+    class16: number;
+    class17: number;
+    class18: number;
+    class19: number;
+    class20: number;
+    class21: number;
+    class22: number;
+    class23: number;
+    class24: number;
+    class25: number;
+    class26: number;
+};

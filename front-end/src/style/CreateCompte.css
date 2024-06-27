@@ -1,0 +1,67 @@
+.newClick{
+    background-color: rgb(193, 174, 150);
+    border-radius: 15px;
+    margin-top: 20px;
+    text-align: center;
+    /* margin-bottom: 40px; */
+    margin-right: 80px;
+    margin-left: 40px;
+    height: 80px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    /* box-shadow: 0px 0px 40px rgb(0, 0, 0); */
+}
+
+.newClick:hover{
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+}
+
+.create{
+  display: flex;
+  justify-content: space-around;
+}
+
+.createAccount{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: rgb(221, 203, 181); */
+  /* margin-bottom: 40px; */
+  /*height: 40px;
+  width: 200px;
+  text-align: center; */
+  border-radius: 10px;
+  background-color: rgb(193, 174, 150);
+  border: 3px solid rgb(0, 0, 75);
+  margin-top: 40px;
+  width: 450px;
+  height: auto;
+}
+
+.ide{
+  /* margin-top: 40px; */
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgb(0, 0, 75);
+}
+
+.ide::placeholder{
+  color: rgb(193, 174, 150);
+  padding: 10px;
+  font-size: 15px;
+}
+
+.bord{
+  border-radius: 10px;
+  background-color: rgb(193, 174, 150);
+  border: 3px solid rgb(0, 0, 75);
+  margin-top: 40px;
+  width: 450px;
+  height: auto;
+}
+
+.nv{
+  font-weight: bold;
+}

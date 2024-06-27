@@ -1,0 +1,51 @@
+version: '3.3'
+
+services:
+  backend:
+    image: backend
+    container_name: backend
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    networks:
+      - pfe_network
+    ports:
+      - "3000:3000"
+    restart: always
+    depends_on:
+      - postgres
+    environment:
+      DATABASE_URL: postgres://wis:wis@postgres:5432/mydb
+  frontend:
+    image: front-end
+    container_name: front-end
+    build:
+      context: ./front-end
+      dockerfile: Dockerfile
+    networks:
+      - pfe_network
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+
+  postgres:
+    image: postgres:13
+    container_name: postgres
+    environment:
+      POSTGRES_USER: wis
+      POSTGRES_PASSWORD: wis
+      POSTGRES_DB: mydb
+    ports:
+      - "5432:5432" 
+    networks:
+      - pfe_network
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+networks:
+  pfe_network:
+    driver: bridge
+
+volumes:
+  postgres_data:

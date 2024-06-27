@@ -1,0 +1,27 @@
+.navbars {
+    display: flex;
+    background-color: #000000;
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1em;
+    /* color: #010101; */
+    display: flex;
+}
+
+
+.nav-link {
+    /* text-decoration: none; */
+    color: #ffffff;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #454444;
+    border-radius: 5px;
+    color: #fff;
+}

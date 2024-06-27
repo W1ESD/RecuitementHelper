@@ -1,0 +1,7 @@
+body, .App{
+  background-color: rgb(221, 203, 181);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
